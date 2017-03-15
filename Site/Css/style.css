@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body,html {
+    height: 100%;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+a span.unclickable  { 
+    text-decoration: none;
+}
+
+     a span.unclickable:hover { 
+         cursor: default; 
+}
+
+body{
+    position: relative;
+}
+
+body.modal-open { 
+    overflow-y: auto ;
+}
+
+#lgo{
+    animation: anim 4s;
+  
+}
+@keyframes anim{
+    0%{
+        color: darkorchid;
+        font-size: 15px;
+    }
+    100%{
+        font-size: 25px;
+    }
+    }
+
+nav{
+    height: auto !important;
+    width: auto !important;
+}
+
+.navbar{
+    border-bottom: 3px solid darkorchid;
+    
+}
+
+nav img{
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+nav a{
+    color: aliceblue;
+}
+
+nav a:hover{
+    color: darkorchid;
+    
+}
+
+.navbar-right{
+    float: right;
+    margin-top: -45px;
+    margin-bottom: -20px;
+    margin-right: 15px;
+}
+.thumb img {
+    height:300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*
+
+@media screen and (max-width: 600px) {
+  #navbarResponsive{
+    position: relative;
+    min-height: 40px;
+  }
+  #navbarResponsive ul {
+    position: absolute;
+  }
+    
+    nav button{
+        content:"";
+		background: url('nav-icon.png') no-repeat;
+    }
+  #navbarResponsive li {
+    display: none;  hide all <li> items 
+    background: url('nav-icon.png') no-repeat;
+    margin: 10px;
+        left: 10px;
+  }
+  #navbarResponsive li {
+    display: block;  show only current <li> item 
+  }
+  
+}
+*/
+
+.btn-default{
+    background: darkorchid;
+    color: aliceblue;
+}
+
+.btn-default a{
+    background: darkorchid;
+    color: aliceblue;
+}
+
+
+.btn-default a:hover{
+    background: #4d0099;
+    color: aliceblue;
+}
+
+
+.bg-faded{
+    background: #24313c;
+}
+
+div{
+    display: block;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+carousel img{
+    background-position: center center;
+}
+
+.carousel-inner {
+    height: 100%;
+    background-position: center center;
+    color: rgba(17, 18, 19, .6);
+}
+
+.Cat_Card{
+    color:black;
+}
+.Cat_Card:hover{
+    color:#4d0099;
+}
+.txt-center{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgba(152, 24, 237,0.74);
+    
+}
+.card-deck{
+    border-top: 15px;
+}
+
+.card-img-top{
+ width: 100%;
+}
+
+.stylish-panel {
+    padding: 20px 0;
+    text-align: center;
+}
+.stylish-panel > div > div{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.stylish-panel > div:hover > div{
+    margin-top: -10px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+
+
+.re:hover{
+    text-decoration: none;
+    color: rgba(152, 24, 237,0.74);
+}
+
+
+
+
+
+
+.contact_Us{
+    background: #24313c;
+    height: 500px;
+    text-align: center;
+    
+}
+
+.Contact_Title{
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgba(257, 257, 257,0.80);
+}
+
+.contact_Left{
+    font-size: 15px;
+	font-weight: 500;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.contact_Left input[type="text"]{
+    outline: none;
+	width: 50%;
+	padding: 7px;
+	margin: 2px 2px 10px 0px;
+	border: 1px solid;
+    border-radius: 5px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+.contact_Left textarea{
+    width: 70%;
+	font-size: 15px;
+	color: #000;
+	padding:7px;
+    margin: 0px 50px 0px 0px;
+	border: 1px solid;
+	height: 10em;
+    border-radius: 5px;
+}
+
+iframe{
+    height: 300px;
+    width: 75%;
+}
+
+.contenu{
+    margin-left: 80px ;
+    padding-top: 40px ;
+}
+
+#footer{
+    height: 340px;
+    color: aliceblue;
+    background: #1d2730;
+}
+
+#footer img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#footer a {
+    color: aliceblue;
+}
+
+#footer a:hover{
+    color: darkorchid;
+}
+
+.abtus ul li{
+    text-decoration: none;
+}
+
+#social{
+    float: right;
+}
+.abtus ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.abtus ul{
+    display: inline-block;
+    text-decoration: none;
+}
+
+#social img{
+   font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+
+#social ul li{
+    display: inline;
+}
+
+.cntct{
+    text-align: center;
+}
+
+.bottom{
+    background: #131a20;
+    margin-top: -25px;
+    font-size: 0.8em;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+.text-center{
+    color:aliceblue; 
+    text-align: center;
+}
+
+
+footer a#scrollUp {
+    bottom: 5px;
+    right: 10px;
+    padding: 15px 15px;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(152, 24, 237,0.74);
+    color: #FFF;
+}
+/*sign up*/
+
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgba(152, 24, 237,0.74);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+     box-shadow: 0px 2px 20px 2px 
+      rgba(172, 30, 244,0.50);
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: rgba(152, 24, 237,0.74);
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: darkorchid;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+.info {
+  margin: 50px auto;
+  text-align: center;
+}
+ .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.info span a {
+  color: #000000;
+  text-decoration: none;
+}
+ .info span .fa {
+  color: #EF3B3A;
+}
+/*end sign up*/

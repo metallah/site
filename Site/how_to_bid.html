@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8" >
+    
+    <meta name = "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600">
+    
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href = "Css/style.css" rel="stylesheet">
+    <link href="Css/normalize.css-master/normalize.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Logo.jpg"/>
+    <title> EstateAuction.com </title>
+    <style type='text/css'>
+     a span.unclickable  { text-decoration: none; }
+     a span.unclickable:hover { cursor: default; }
+        body{
+            background: #f9e6ff;
+        }
+     </style>
+    
+</head>
+<body data-spy="scroll" data-target="#navbar-example" data-offset = "70">
+    
+    <span id =  "ttop"></span>
+    <!-- navbar -->
+    <nav class="row navbar navbar-fixed-top bg-faded" id = "navbar-example">
+
+        <div class="collapse navbar-toggleable-md navbar-toggleable-xs navbar-toggleable-sm" id="navbarResponsive">
+            <a class="navbar-brand" href="#">
+              <img src="http://i.imgur.com/MdNPPh2.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
+                <span id = "lgo" class='unclickable' onclick='return false;'>EstateAuction</span>
+            </a>
+            
+            
+        <ul class="nav navbar-nav clearfix">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+          </li>
+                
+        </ul>
+                  
+      </div>
+<!--        button-->
+        <div class = "navbar-right">
+            <button class="btn btn-default"  data-target ="#login" data-toggle="modal">log In </button>
+            <button class="btn btn-default" data-target ="#register" data-toggle="modal">
+                Register</button>
+        </div>
+
+    </nav>
+    
+    <!--        Modal Sign Up -->
+    
+    <br>
+    <br>
+     <div class="modal fade" id="login" role="dialog" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+  
+    <div class="login-page">
+  <div class="form">
+<!--
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+-->
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+    
+         </div>
+    </div>
+<!-- end Sign Up -->
+<!--    register-->
+    
+<!--    PAS Teminee-->
+    
+    <div class="modal fade" id="register" role="dialog" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+  
+    <div class="register-page">
+  <div class="form">
+    <input type="email" placeholder="*Email"/>
+      <input type="password" placeholder="*password"/>
+      <input type="password" placeholder="*Confirm password"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+      
+    
+  </div>
+</div>
+    
+         </div>
+    </div>
+    
+ <!--------- CONTENU HERE------------------------------------------------------------------------>
+    <div class="container">
+    </br></br>
+
+    <h1>Bidding Tutoriel</h1>
+
+                <p>Everyone wants to win an auction, but only at the right price. Bidding for items is fun, but keep in mind that each bid you make is a binding contract to buy the item if you win.</p>
+
+                <p>The information here is for our auction-style listings. Bidding for items in live auction event works a little differently, and requires registration for an event before you can bid. Learn more about <a href="#">participating in live auction events</a>.</p>
+
+                <h3>Incremental bidding</h3>
+
+                <p style="margin-top:0px;">We suggest that you bid the maximum amount that you're willing to pay for an item, and let our system incrementally increase your bid for you, as necessary.&nbsp;</p>
+
+                <p>As the listing proceeds, we compare your bid to those of other bidders.&nbsp;When you're outbid, we <a href="#">automatically bid</a>
+                    <a href="#"></a>on your behalf up to your maximum bid. We increase your bid by increments only as much as necessary to maintain your position as highest bidder. Your maximum bid reflects the amount you're willing to pay for an item, but you could end up paying less.</p>
+
+                <a name="auto"></a><h2>Automatic bidding</h2>
+
+                <p style="margin-top:0px;">Our max bidding (also called automatic bidding) system makes bidding convenient so you don't have to keep coming back to re-bid every time someone places another bid.</p>
+                <p>
+                    In live auction events, max bids are called absentee bids, and work a little bit differently than in other auction-style listings on eBay. Learn more about <a href="#">participating in live auction events</a>.
+</p>
+                <p style="margin-bottom: 0px;">
+                    <b>How max bidding, or automatic bidding, works</b></p>
+                <ul style="margin-top: 6px;"><li><div style="padding-left:4px;"><p>When you place a bid, you enter the maximum amount you're willing to pay for the item. The seller and other bidders don't know your maximum bid.</p></div>
+                    </li><li>
+                    <div style="padding-left:4px;"><p>We place bids on your behalf using the automatic bid increment amount, which is based on the current high bid. We increase your bid only as much as necessary to make sure that you remain the high bidder, or to meet the reserve price, up to your maximum amount.</p></div></li><li class="unorderedList"><div style="padding-left:4px;">
+                    <p>If another bidder places the same maximum bid or higher, we notify you so you can place another bid. Your maximum bid is kept confidential until it is exceeded by another bidder.</p></div></li></ul>
+                
+                <p style="margin-bottom: 0px;"><b class="boldTxt">Here's an example:</b></p>
+                <ol><li><div style="padding-left:4px;"><p>The current bid for an item is $10.00. Tom is the high bidder, and has placed a maximum bid of $12.00 on the item. His maximum bid is kept confidential from other members.</p></div></li><li><div style="padding-left:4px;"><p>Laura views the item and places a maximum bid of $15.00. Laura becomes the high bidder.</p></div></li><li><div style="padding-left:4px;"><p>Tom's bid is raised to his maximum of $12.00. Laura's bid is now $12.50. </p></div></li><li><div style="padding-left:4px;"><p>We send Tom an email that he has been outbid. If he doesn't raise his maximum bid, Laura wins the item.</p></div></li></ol>
+                <p><b class="boldTxt">Other terms</b></p>
+                <p>In reserve price auctions, if your maximum bid is at least the reserve price, we automatically increase your bid to meet the reserve, and bidding will continue from there.</p>
+                <a name="how"></a><h2 class="sectionTtl1">How to bid </h2>
+                <div class="grybg gryBx marT15"><b>Here's how to bid on an  item:</b><ol style="margin-top: 6px;"><li><div style="padding-left:4px;"><p>Carefully review the listing.</p></div></li><li><div style="padding-left:4px;"><p>Click the <b class="boldTxt">Place Bid</b> button. You may need to sign in.</p></div></li><li><div style="padding-left:4px;"><p>Enter your maximum bid, and then click the <b class="boldTxt">Continue</b> button.</p></div></li><li><div style="padding-left:4px;"><p>Review your bid, and then click the <b class="boldTxt">Confirm Bid</b> button. </p></div></li></ol></div>
+                <p>When the listing ends, you'll receive an email indicating whether you've won the item and an explanation of what to do next.</p>
+                <a name="history"></a>
+                <h3 class="sectionTtl1">Bid history and bidder search</h3>
+                <p style="margin-top:0px;">To keep certain info private, we limit how bid history information is displayed. When the highest bid, reserve price, or Buy It Now price reaches or exceeds a certain level, members can't view or search for member-specific information, such as user IDs, on the <b class="boldTxt">Bid History</b> page. Though the <b class="boldTxt">Bid History: Details</b> page has information on bidders, each bidder is assigned an anonymous name (x***y, for example). Only the seller can see a bidder's user ID.</p>
+                <p><b class="boldTxt">Note: </b>eBay determines when user IDs are no longer viewable based on the price or bid amount, and this varies by country.</p>
+                <a name="change"></a>
+                <h3 class="sectionTtl1">Changing or retracting your bid</h3>
+                <p style="margin-top:0px;">As a general rule, you can't retract or cancel a bid. Once you place a bid, you agree to pay for the item if you're the winning bidder. However, honest mistakes sometimes occur.</p>
+                <p style="margin-bottom: 0px;">If you want to retract a bid:</p>
+                <ul style="margin-top: 6px;"><li class="unorderedList"><div style="padding-left:4px;"><p>Review the conditions and time restrictions for canceling a bid in an auction-style listing.</p></div></li><li class="unorderedList"><div style="padding-left:4px;"><p>If you feel you have a valid reason for canceling a bid, fill out a Bid Retraction.</p></div></li><li class="unorderedList"><div style="padding-left:4px;"><p>If you want to cancel a Best Offer, use the <b class="boldTxt">Best Offer Cancellation</b> form.</p></div></li></ul>
+                <p>
+                    If you won an item and you no longer want to buy it, you need to .</p>
+                <p>
+                    A bid on eBay is considered a contract, and you're obligated to purchase the item. Read about <a href="">changing your mind about an item</a>.
+                </p>
+                <p>
+                    <b class="boldTxt">Under what conditions can I retract a bid?</b></p>
+                <p style="margin-bottom: 0px;">Whether you can retract a bid depends on the circumstances and timing of the bid. You can retract a bid for the following reasons:</p>
+                <ul style="margin-top: 6px;"><li class="unorderedList"><div style="padding-left:4px;"><p><b class="boldTxt">You accidentally entered the wrong bid amount due to a typographical error</b>. For example, you bid $99.50 instead of $9.95. If this happens, you need to reenter the correct bid amount right away. Changing your mind does not qualify as accidentally entering a wrong bid amount.</p></div></li><li class="unorderedList"><div style="padding-left:4px;"><p><b class="boldTxt">The item's description changed significantly after you entered your last bid</b>. For example, the seller updated details about the item's features or condition.</p></div></li><li class="unorderedList"><div style="padding-left:4px;"><p><b class="boldTxt">You can't reach the seller by telephone or email</b>.</p></div></li></ul>
+                <p><b class="boldTxt">How long do I have to retract a bid?</b></p>
+                <p>If you meet any of the conditions for retracting a bid, consult the table to determine if you meet the time restrictions. 
+                </p>
+                <p>The timing in live auction event works a little differently than that of other auction-style listings on eBay, and while you can change your absentee bid before the event starts, you can't retract a bid made during a live auction event. Learn more about <a href="">participating in live auction events</a>.</p>
+
+                <p><b>What if I can't retract a bid?</b></p>
+                <p>If you can't retract a bid, you can <a href="">contact the seller</a> to request that your bid be canceled. The decision to cancel a bid is up to the seller.</p>
+                <p><b class="">Other terms</b></p>
+                <p>Remember that every bid is binding, unless the item is listed in a category covered by the <a href="">non-binding bid policy</a> or the sale is prohibited by law or by our <a href="">User Agreement</a>. Bidding on multiple identical items should be done only if you intend to buy all of the items. </p>
+                <p>Your bids affect how other users bid for an item and the item's final selling price. We carefully investigate all bid retractions to determine whether they are appropriate and conform to the rules for buyers. Abuse of bid retractions can result in the suspension of your account.</p>
+                <p>Bids retracted within the last 24 hours of an auction-style listing can be viewed as an example of <a href="">shill bidding</a>, which is a serious violation of eBay policy.</p>
+                <p>You cannot retract a purchase made through a Buy It Now listing. Once you confirm your purchase, you are obligated to pay the seller.</p>
+                <a name="special"></a>
+<h3>Listings with special bidding requirements</h3>
+                <p style="margin-top:0px;">Bidding requirements vary depending on the type of listing.</p>
+                
+                <a name="block"></a><h2 class="sectionTtl1">Blocked bidders</h2>
+                <p style="margin-top:0px;">Sellers can make their listings unavailable to certain bidders  based on certain criteria, such as whether or not they have a PayPal account, their country of registration, or their buying history on eBay. </p>
+                <p>If you're blocked from a listing and want to discuss the situation with the seller, click the seller's user ID or the <b class="boldTxt">Ask a question</b>
+                    <b class="boldTxt"></b>link on the listing page. Learn about <a href="">managing bidders and buyers</a> from a seller's point of view.</p>
+                <a name="fine"></a><h2 class="sectionTtl1">Other terms</h2>
+                <ul style="margin-top: 6px;"><li><div style="padding-left:4px;">
+                    <p>Bidding is meant to be fun, but remember that each bid you place enters you into a binding contract. The only <a href="">bids that are non-binding</a> are those placed in the Real Estate category and for vehicles on eBay Motors. All bids are active until the listing ends. If you win an item, you're obligated to purchase it.&nbsp;&nbsp;
+                    </p></div></li><li>
+                    <div style="padding-left:4px;">
+                        <p>Don't bid on identical items in different listings if you only want one item. If you win both, you'll be obligated to buy both. </p>
+                    </div>
+                    </li>
+                    <li class=""><div style="padding-left:4px;"><p>If you're outbid on an item, wait until the listing has ended before placing a bid on an equivalent item. If the bidder who won doesn't complete the transaction for any reason, you could become the winning bidder.</p></div></li><li><div style="padding-left:4px;"><p>If you're blocked from bidding on a seller's listings, you cannot bid using another user ID.</p></div></li></ul><br></div></div></form></div>
+           </div>     
+    <!-----------------CONTENU HERE-------------------------------------------------------------------->
+    
+    
+    <div id = "footer">
+    <div class = "top">
+    <div class= "container">
+    <a class="navbar-brand" href="#">
+    <img src="http://i.imgur.com/MdNPPh2.jpg" width="40" height="40" class="d-inline-block inline-block fotr" alt=""> EstateAuction </a>
+                
+    <div class=" contenu col col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<h4>How it Works</h4>
+<ul>
+<li class="selected"><a href="#">How to Bid</a></li>
+<li class=""><a href="#">Auction Fees</a></li>
+<li class=""><a href="#">Shipping Fees</a></li>
+<li class=""><a href="#">Auction FAQ's</a></li>
+<li class=""><a href="#">Contact Us</a></li>
+<li class=""><a href="#">About Us</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<h4>Questions?</h4>
+<a href="mailto:medtaalla@gmail.com">medtaalla@gmail.com</a><br><br>
+TAALLA Immobilier<br>
+0622413891 <br> (9am - 5pm GMT)<br>
+4746 Alouan 151, <br>
+SETTAT, SE </div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+    
+<a href="https://twitter.com/salvageoffers" target="_blank">
+    <i class="fa fa-twitter-square fa-2x"></i></a>
+<!--    &nbsp;&nbsp;-->
+   
+    <a href="https://plus.google.com/105227650754471753159/posts" target="_blank">
+        <i class="fa fa-google-plus-square fa-2x"></i>
+    </a>
+    <a class="button social" href="https://github.com/metallah" target="_blank">
+        <i style="font-size:36px"  class="fa fa-fw fa-github"></i>
+    </a>
+    <a class="button social" href="https://www.facebook.com" target="_blank">
+        <i style="font-size:36px" class="fa fa-facebook-official"></i>
+    </a>
+    <a class="button social" href="https://ma.linkedin.com" target="_blank">
+        <i style="font-size:36px" class="fa fa-linkedin-square"></i>
+    </a>
+    
+<br><br>
+We Accept <br>
+    <i class="fa fa-cc-visa fa-2x"></i>
+    <i class="fa fa-cc-mastercard fa-2x"></i>
+    <i class="fa fa-cc-discover fa-2x"></i>
+    <i class="fa fa-cc-paypal fa-2x"></i>
+</div>
+</div>
+</div>     
+            
+        </div>     
+    </div>
+</div>
+    <div class = "bottom">
+  <div class = "container">
+    <footer class="text-center clearfix">
+    <div class="row">
+        <div class="col">
+        © Copyright Sanders Auto 2017 | <a href="#">Terms</a> | <a href="#" target="_blank">Privacy Policy</a>
+       <br>
+            <a href="#">by WebAdaptive</a>
+        <p>
+            EstateAuction.com (TM) is a Trademark of Copart Inc., Settat, Morocco.
+        </p>
+        </div>
+    </div>
+        
+        <a id="scrollUp" href="#ttop" style="position: fixed; z-index: 1;"><i class="fa fa-angle-up"></i></a>
+        
+    </footer></div>
+        </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>   
+    
+            <script>
+    
+//    $('.message a').click(function(){
+//   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+//});
+             
+    $(document).ready(function(){
+     $('#scrollUp').hide();
+       
+        $(function () {
+            $(window).scroll(function () {
+                posScroll = $(document).scrollTop();
+                    if(posScroll >=550) 
+                        $('#scrollUp').fadeIn(250);
+                    else
+                        $('#scrollUp').fadeOut(250);
+                });
+            });
+        });
+                
+                
+    </script>
+</body>
+</html>
